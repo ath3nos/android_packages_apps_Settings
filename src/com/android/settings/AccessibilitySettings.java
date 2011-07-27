@@ -138,11 +138,11 @@ public class AccessibilitySettings extends PreferenceActivity {
         }
 
         if (KeyCharacterMap.deviceHasKey(KeyEvent.KEYCODE_POWER)) {
-            // The setting doesn't work anyway, so remove it from the menu
-            getPreferenceScreen().removePreference(mPowerButtonCategory);
+           	// The setting doesn't work anyway, so remove it from the menu
+		getPreferenceScreen().removePreference(mPowerButtonCategory);
         } else {
-            // No POWER key on the current device; this entire category is irrelevant.
-            getPreferenceScreen().removePreference(mPowerButtonCategory);
+            	// No POWER key on the current device; this entire category is irrelevant.
+            	getPreferenceScreen().removePreference(mPowerButtonCategory);
         }
     }
 
