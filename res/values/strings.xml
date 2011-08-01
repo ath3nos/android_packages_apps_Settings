@@ -3021,5 +3021,5 @@ found in the list of installed applications.</string>
     <!-- A menu item in "About phone" that allows the user to update the phone with settings
     from their cell phone carrier. The use of the string is similar to the string
     "system_update_settings_list_item_title" in this project. [CHAR LIMIT=25] -->
-    <string name="additional_system_update_settings_list_item_title">Additional system updates</string>
+    <string name="additional_system_update_settings_list_item_title">Sprint system updates</string>
 </resources>

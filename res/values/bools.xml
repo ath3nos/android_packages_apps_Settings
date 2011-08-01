@@ -22,5 +22,5 @@
     <bool name="has_dock_settings">false</bool>
 
     <!-- Display additional System Update menu if true -->
-    <bool name="config_additional_system_update_setting_enable">false</bool>
+    <bool name="config_additional_system_update_setting_enable">true</bool>
 </resources>
