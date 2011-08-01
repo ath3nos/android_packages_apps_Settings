@@ -91,8 +91,6 @@ public class TetherSettings extends PreferenceActivity {
 
             setTitle(R.string.tether_settings_title_wifi);
         }
-	// Remove USB tether preference because it doesn't work yet :(
-	getPreferenceScreen().removePreference(mUsbTether);
 
         mWifiRegexs = cm.getTetherableWifiRegexs();
         if (mWifiRegexs.length == 0) {
