@@ -143,7 +143,7 @@
 
 	<!-- Build ID -->
 	<Preference android:key="build_id"
-		style="android:preferenceInformationStyle"
+		style="?android:preferenceInformationStyle"
 		android:title="@string/build_id"
 		android:summary="@string/build_id_default" />
 
