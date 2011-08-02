@@ -138,19 +138,11 @@ public class AccessibilitySettings extends PreferenceActivity {
         }
 
         if (KeyCharacterMap.deviceHasKey(KeyEvent.KEYCODE_POWER)) {
-            int incallPowerBehavior = Settings.Secure.getInt(getContentResolver(),
-                    Settings.Secure.INCALL_POWER_BUTTON_BEHAVIOR,
-                    Settings.Secure.INCALL_POWER_BUTTON_BEHAVIOR_DEFAULT);
-            // The checkbox is labeled "Power button ends call"; thus the in-call
-            // Power button behavior is INCALL_POWER_BUTTON_BEHAVIOR_HANGUP if
-            // checked, and INCALL_POWER_BUTTON_BEHAVIOR_SCREEN_OFF if unchecked.
-            boolean powerButtonCheckboxEnabled =
-                    (incallPowerBehavior == Settings.Secure.INCALL_POWER_BUTTON_BEHAVIOR_HANGUP);
-            mPowerButtonEndsCallCheckBox.setChecked(powerButtonCheckboxEnabled);
-            mPowerButtonEndsCallCheckBox.setEnabled(true);
+            	// No we don't want this setting. It's broken.
+		getPreferenceScreen().removePreference(mPowerButtonCategory);
         } else {
-            // No POWER key on the current device; this entire category is irrelevant.
-            getPreferenceScreen().removePreference(mPowerButtonCategory);
+            	// No POWER key on the current device; this entire category is irrelevant.
+            	getPreferenceScreen().removePreference(mPowerButtonCategory);
         }
     }
 

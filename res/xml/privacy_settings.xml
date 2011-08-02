@@ -31,7 +31,8 @@
                 android:persistent="false" />
     </PreferenceCategory>
 
-    <!-- <PreferenceCategory
+	<!-- NO WE DON'T WANT THIS IT BRICKS PHONES!!! -->
+	<!-- <PreferenceCategory
             android:title="@string/personal_data_section_title">
         <PreferenceScreen
                 android:title="@string/master_clear_title"

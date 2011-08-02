@@ -1296,7 +1296,10 @@
     <string name="build_number">Build number</string>
     <!-- About phone screen,  setting option name-->
     <string name="mod_version">Mod version</string>
-    <string name="mod_version_default">Unknown</string>
+    <string name="mod_version_default">CyanogenMod 7.1 RC0 DREW-IHO STABLE-001</string>
+    <!-- About phone screen, build ID -->
+    <string name="build_id">Build ID</string>
+    <string name="build_id_default">STABLE-001</string>
 
     <!-- About phone screen, show when a value of some status item is unavailable. -->
     <string name="device_info_not_available">Not available</string>
@@ -3021,5 +3024,5 @@ found in the list of installed applications.</string>
     <!-- A menu item in "About phone" that allows the user to update the phone with settings
     from their cell phone carrier. The use of the string is similar to the string
     "system_update_settings_list_item_title" in this project. [CHAR LIMIT=25] -->
-    <string name="additional_system_update_settings_list_item_title">Sprint system updates</string>
+    <string name="additional_system_update_settings_list_item_title">Additional system updates</string>
 </resources>

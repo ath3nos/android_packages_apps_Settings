@@ -91,6 +91,9 @@ public class TetherSettings extends PreferenceActivity {
 
             setTitle(R.string.tether_settings_title_wifi);
         }
+	
+	// Remove USB tether preference because it's still broken :(
+	getPreferenceScreen().removePreference(mUsbTether);
 
         mWifiRegexs = cm.getTetherableWifiRegexs();
         if (mWifiRegexs.length == 0) {
@@ -241,15 +244,15 @@ public class TetherSettings extends PreferenceActivity {
 
         if (usbTethered) {
             mUsbTether.setSummary(R.string.usb_tethering_active_subtext);
-            mUsbTether.setEnabled(true);
-            mUsbTether.setChecked(true);
+            mUsbTether.setEnabled(false);
+            mUsbTether.setChecked(false);
         } else if (usbAvailable) {
             if (usbError == ConnectivityManager.TETHER_ERROR_NO_ERROR) {
-                mUsbTether.setSummary(R.string.usb_tethering_available_subtext);
+                mUsbTether.setSummary("USB tether not available.");
             } else {
-                mUsbTether.setSummary(R.string.usb_tethering_errored_subtext);
+                mUsbTether.setSummary("USB tether not available due to error.");
             }
-            mUsbTether.setEnabled(true);
+            mUsbTether.setEnabled(false);
             mUsbTether.setChecked(false);
         } else if (usbErrored) {
             mUsbTether.setSummary(R.string.usb_tethering_errored_subtext);

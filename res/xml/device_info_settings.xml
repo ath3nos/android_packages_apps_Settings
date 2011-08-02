@@ -141,6 +141,12 @@
                 android:title="@string/mem_info"
                 android:summary="@string/device_info_default"/>
 
+	<!-- Build ID -->
+	<Preference android:key="build_id"
+		style="android:preferenceInformationStyle"
+		android:title="@string/build_id"
+		android:summary="@string/build_id_default" />
+
         <!-- Mod version -->
         <Preference android:key="mod_version"
                 style="?android:preferenceInformationStyle"
